@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О нас - FloraDream</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Шапка -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-spa"></i>
+                    <a href="index.html">FloraDream</a>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="catalog.html">Каталог</a></li>
+                        <li><a href="about.html" class="active">О нас</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                        <li>
+                            <button class="cart-icon" id="cart-button">
+                                <i class="fas fa-shopping-cart"></i>
+                                <span class="cart-count">0</span>
+                            </button>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- О нас -->
+    <section class="container about">
+        <h2 class="section-title">О нашей компании</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>FloraDream - это не просто магазин цветов, это место, где рождаются эмоции и воспоминания. Мы работаем на рынке с 2010 года и за это время успели подарить радость тысячам клиентов.</p>
+                <p>Наша миссия - делать мир красивее и дарить людям положительные эмоции с помощью цветов. Мы тщательно отбираем каждый цветок, чтобы гарантировать свежесть и качество наших букетов.</p>
+                <p>В нашем коллективе работают профессиональные флористы с многолетним опытом, которые постоянно совершенствуют свои навыки и следят за последними тенденциями в мире флористики.</p>
+            </div>
+            <div class="about-image">
+                <img src="https://avatars.mds.yandex.net/i?id=34720f25b0abaf6e7a85798b017846e0_l-4012162-images-thumbs&n=13" alt="Наш магазин">
+            </div>
+        </div>
+
+        <div class="team">
+            <h3 class="section-subtitle">Наша команда</h3>
+            <div class="team-grid">
+                <div class="team-member">
+                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Анна">
+                    <h4>Анна</h4>
+                    <p>Главный флорист</p>
+                </div>
+                <div class="team-member">
+                    <img src="https://cdn.culture.ru/images/8e9b9805-44ab-5d63-bb2a-47076bccd837" alt="Мария">
+                    <h4>Мария</h4>
+                    <p>Флорист-дизайнер</p>
+                </div>
+                <div class="team-member">
+                    <img src="https://images.unsplash.com/photo-1552058544-f2b08422138a?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Дмитрий">
+                    <h4>Дмитрий</h4>
+                    <p>Менеджер по работе с клиентами</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Корзина -->
+    <div class="cart-modal" id="cart-modal">
+        <div class="cart-header">
+            <h2>Корзина</h2>
+            <button class="close-cart" id="close-cart">&times;</button>
+        </div>
+        <div class="cart-items" id="cart-items">
+            <!-- Т商品ры в корзине будут добавлены через JavaScript -->
+        </div>
+        <div class="cart-total" id="cart-total">
+            Итого: 0 руб.
+        </div>
+        <button class="checkout-btn" id="checkout-btn">Оформить заказ</button>
+    </div>
+
+    <!-- Подвал -->
+    <footer id="contacts">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>О нас</h3>
+                    <p>FloraDream - это магазин цветов с более чем 10-летней историей. Мы дарим радость и красоту нашим клиентам.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Контакты</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> ул. Цветочная, 15</p>
+                    <p><i class="fas fa-phone"></i> +7 (123) 456-78-90</p>
+                    <p><i class="fas fa-envelope"></i> info@floradream.ru</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Мы в соцсетях</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-vk"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 FloraDream - Магазин цветов. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/database.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

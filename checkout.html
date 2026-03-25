@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Оформление заказа - FloraDream</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Шапка -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-spa"></i>
+                    <a href="index.html">FloraDream</a>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="catalog.html">Каталог</a></li>
+                        <li><a href="about.html">О нас</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                        <li>
+                            <button class="cart-icon" id="cart-button">
+                                <i class="fas fa-shopping-cart"></i>
+                                <span class="cart-count">0</span>
+                            </button>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Оформление заказа -->
+    <section class="container">
+        <h2 class="section-title">Оформление заказа</h2>
+        
+        <div class="checkout-content">
+            <div class="order-summary">
+                <h3>Ваш заказ</h3>
+                <div class="order-items" id="order-items">
+                    <!-- Товары будут добавлены через JavaScript -->
+                </div>
+                <div class="order-total" id="order-total">
+                    Итого: 0 руб.
+                </div>
+            </div>
+            
+            <div class="order-form">
+                <h3>Данные для доставки</h3>
+                <form id="checkout-form">
+                    <div class="form-group">
+                        <label for="name">Ваше имя *</label>
+                        <input type="text" id="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Телефон *</label>
+                        <input type="tel" id="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Адрес доставки *</label>
+                        <textarea id="address" rows="2" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="delivery-date">Дата доставки</label>
+                        <input type="date" id="delivery-date">
+                    </div>
+                    <div class="form-group">
+                        <label for="delivery-time">Время доставки</label>
+                        <select id="delivery-time">
+                            <option value="">Любое время</option>
+                            <option value="10:00-12:00">10:00 - 12:00</option>
+                            <option value="12:00-14:00">12:00 - 14:00</option>
+                            <option value="14:00-16:00">14:00 - 16:00</option>
+                            <option value="16:00-18:00">16:00 - 18:00</option>
+                            <option value="18:00-20:00">18:00 - 20:00</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Пожелания к заказу</label>
+                        <textarea id="message" rows="3"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="payment-method">Способ оплаты</label>
+                        <select id="payment-method">
+                            <option value="cash">Наличными при получении</option>
+                            <option value="card">Картой онлайн</option>
+                            <option value="card-courier">Картой курьеру</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="submit-order">Подтвердить заказ</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Корзина -->
+    <div class="cart-modal" id="cart-modal">
+        <div class="cart-header">
+            <h2>Корзина</h2>
+            <button class="close-cart" id="close-cart">&times;</button>
+        </div>
+        <div class="cart-items" id="cart-items">
+            <!-- Товары в корзине будут добавлены через JavaScript -->
+        </div>
+        <div class="cart-total" id="cart-total">
+            Итого: 0 руб.
+        </div>
+        <button class="checkout-btn" id="checkout-btn">Оформить заказ</button>
+    </div>
+
+    <!-- Подвал -->
+    <footer id="contacts">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>О нас</h3>
+                    <p>FloraDream - это магазин цветов с более чем 10-летней историей. Мы дарим радость и красоту нашим клиентам.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Контакты</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> ул. Цветочная, 15</p>
+                    <p><i class="fas fa-phone"></i> +7 (123) 456-78-90</p>
+                    <p><i class="fas fa-envelope"></i> info@floradream.ru</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Мы в соцсетях</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-vk"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 FloraDream - Магазин цветов. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/database.js"></script>
+    <script src="js/checkout.js"></script>
+</body>
+</html>

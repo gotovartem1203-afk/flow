@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FloraDream - магазин цветов</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Шапка -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-spa"></i>
+                    <a href="index.html">FloraDream</a>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="catalog.html">Каталог</a></li>
+                        <li><a href="about.html">О нас</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                        <li>
+                            <button class="cart-icon" id="cart-button">
+                                <i class="fas fa-shopping-cart"></i>
+                                <span class="cart-count">0</span>
+                            </button>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Герой секция -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Прекрасные цветы для ваших моментов</h1>
+            <p>Мы создаем красивые букеты, которые подчеркнут ваши эмоции и украсят любой праздник</p>
+            <a href="catalog.html" class="btn">Перейти в каталог</a>
+        </div>
+    </section>
+
+    <!-- Категории -->
+    <section class="container">
+        <h2 class="section-title">Категории</h2>
+        <div class="categories" id="categories-container">
+            <!-- Категории будут загружены через JavaScript -->
+        </div>
+    </section>
+
+    <!-- Популярные товары -->
+    <section class="container">
+        <h2 class="section-title">Популярные товары</h2>
+        <div class="products" id="featured-products">
+            <!-- Товары будут добавлены через JavaScript -->
+        </div>
+        <div class="text-center">
+            <a href="catalog.html" class="btn">Смотреть все товары</a>
+        </div>
+    </section>
+
+    <!-- Преимущества -->
+    <section class="benefits">
+        <div class="container">
+            <h2 class="section-title">Почему выбирают нас</h2>
+            <div class="benefits-grid">
+                <div class="benefit">
+                    <i class="fas fa-truck"></i>
+                    <h3>Быстрая доставка</h3>
+                    <p>Доставим заказ в течение 2 часов по городу</p>
+                </div>
+                <div class="benefit">
+                    <i class="fas fa-leaf"></i>
+                    <h3>Свежие цветы</h3>
+                    <p>Мы работаем напрямую с поставщиками</p>
+                </div>
+                <div class="benefit">
+                    <i class="fas fa-gift"></i>
+                    <h3>Уникальные букеты</h3>
+                    <p>Авторские композиции от наших флористов</p>
+                </div>
+                <div class="benefit">
+                    <i class="fas fa-percent"></i>
+                    <h3>Акции и скидки</h3>
+                    <p>Регулярные акции для постоянных клиентов</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Корзина -->
+    <div class="cart-modal" id="cart-modal">
+        <div class="cart-header">
+            <h2>Корзина</h2>
+            <button class="close-cart" id="close-cart">&times;</button>
+        </div>
+        <div class="cart-items" id="cart-items">
+            <!-- Товары в корзине будут добавлены через JavaScript -->
+        </div>
+        <div class="cart-total" id="cart-total">
+            Итого: 0 руб.
+        </div>
+        <button class="checkout-btn" id="checkout-btn">Оформить заказ</button>
+    </div>
+
+    <!-- Подвал -->
+    <footer id="contacts">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>О нас</h3>
+                    <p>FloraDream - это магазин цветов с более чем 10-летней историей. Мы дарим радость и красоту нашим клиентам.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Контакты</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> ул. Цветочная, 15</p>
+                    <p><i class="fas fa-phone"></i> +7 (123) 456-78-90</p>
+                    <p><i class="fas fa-envelope"></i> info@floradream.ru</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Мы в соцсетях</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-vk"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 FloraDream - Магазин цветов. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/database.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

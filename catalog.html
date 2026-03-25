@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог - FloraDream</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Шапка -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-spa"></i>
+                    <a href="index.html">FloraDream</a>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="catalog.html" class="active">Каталог</a></li>
+                        <li><a href="about.html">О нас</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                        <li>
+                            <button class="cart-icon" id="cart-button">
+                                <i class="fas fa-shopping-cart"></i>
+                                <span class="cart-count">0</span>
+                            </button>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Фильтры -->
+    <section class="container">
+        <h2 class="section-title">Каталог товаров</h2>
+        <div class="filters">
+            <div class="filter-group">
+                <label for="category-filter">Категория:</label>
+                <select id="category-filter">
+                    <option value="all">Все категории</option>
+                    <!-- Категории будут загружены через JavaScript -->
+                </select>
+            </div>
+            <div class="filter-group">
+                <label for="price-filter">Цена:</label>
+                <select id="price-filter">
+                    <option value="all">Любая</option>
+                    <option value="0-2000">До 2000 руб.</option>
+                    <option value="2000-5000">2000 - 5000 руб.</option>
+                    <option value="5000-10000">5000 - 10000 руб.</option>
+                    <option value="10000+">Выше 10000 руб.</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label for="sort">Сортировка:</label>
+                <select id="sort">
+                    <option value="name">По названию</option>
+                    <option value="price-asc">По возрастанию цены</option>
+                    <option value="price-desc">По убыванию цены</option>
+                    <option value="popular">По популярности</option>
+                </select>
+            </div>
+        </div>
+    </section>
+
+    <!-- Каталог товаров -->
+    <section class="container">
+        <div class="products" id="products-container">
+            <!-- Товары будут добавлены через JavaScript -->
+        </div>
+        <div class="pagination" id="pagination">
+            <!-- Пагинация будет добавлена через JavaScript -->
+        </div>
+    </section>
+
+    <!-- Корзина -->
+    <div class="cart-modal" id="cart-modal">
+        <div class="cart-header">
+            <h2>Корзина</h2>
+            <button class="close-cart" id="close-cart">&times;</button>
+        </div>
+        <div class="cart-items" id="cart-items">
+            <!-- Товары в корзине будут добавлены через JavaScript -->
+        </div>
+        <div class="cart-total" id="cart-total">
+            Итого: 0 руб.
+        </div>
+        <button class="checkout-btn" id="checkout-btn">Оформить заказ</button>
+    </div>
+
+    <!-- Подвал -->
+    <footer id="contacts">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>О нас</h3>
+                    <p>FloraDream - это магазин цветов с более чем 10-летней историей. Мы дарим радость и красоту нашим клиентам.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Контакты</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> ул. Цветочная, 15</p>
+                    <p><i class="fas fa-phone"></i> +7 (123) 456-78-90</p>
+                    <p><i class="fas fa-envelope"></i> info@floradream.ru</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Мы в соцсетях</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-vk"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 FloraDream - Магазин цветов. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/database.js"></script>
+    <script src="js/catalog.js"></script>
+</body>
+</html>
